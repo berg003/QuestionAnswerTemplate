@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="game.css"></link>
+		<script type="text/javascript" async="" src="game.js"></script>
+		<title>Template Title</title>
+	</head>
+	<body onload="init();">
+		<button type="button" onclick="initQuestionAnswerHtml();">Next</button>
+		<fieldset>
+		<legend>Question:</legend>
+		<div id="question"></div>
+		</fieldset>
+		<fieldset>
+			<legend>Possible Answers:</legend>
+			<div id="answers"></div>
+		</fieldset>
+		<button type="button" onclick="checkAnswers();">Show Correct Answers</button>
+		</br>
+		<div>Good answers at All: </div>
+		<div id="goodAnswers"></div>
+	</body>
+</html>

@@ -1,2 +1,5 @@
 .lime {background:lime;}
 .red {background:red;}
+.inline{display: inline;}
+
+document.getElementsByTagName('select')[0].selectedOptions[0]

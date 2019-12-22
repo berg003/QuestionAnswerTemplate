@@ -55,11 +55,12 @@ function initQuestionAnswerHtml() {
 	} else {
 		coice = true;
 		var combobox = '<select>';
-		document.getElementById('question').innerHTML = '';
+		var questions = '';
 		for (var i in questionAnswer.choice) {
-			document.getElementById('question').innerHTML += ' ' + questionAnswer.choice[i];
+			questions += ' ' + questionAnswer.choice[i];
 			combobox += '<option value="'+questionAnswer.choice[i]+'">'+questionAnswer.choice[i]+'</option>';
 		}
+		document.getElementById('question').innerHTML = questions;
 		combobox += '</select>'
 		for (var i in questionAnswer.answers) {
 			answers += combobox + '<span class="inline" answer='+questionAnswer.answers[i]+'>'+[i]+'</span></br>';
